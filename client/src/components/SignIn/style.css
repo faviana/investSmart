@@ -1,0 +1,78 @@
+h1.logoName{
+    color: white;
+    font-variant: small-caps;
+    font-family: "News Cycle","Arial Narrow Bold",sans-serif;}
+
+.center{
+    text-align: center;
+}
+
+.signin-div{
+    margin-top: 25px;
+}
+
+.signin-form{
+    background-color: #1eaa31e3;
+    padding: 20px;
+    padding-bottom: 50px;
+}
+
+h1.signin-title{
+    font-variant: small-caps;
+    color: white;
+    font-family: "News Cycle","Arial Narrow Bold",sans-serif;}
+
+.form-control{
+    color: darkgray;
+    font-size: 15px;
+    font-family: "News Cycle","Arial Narrow Bold",sans-serif;}
+
+.signin-btn{
+    width: 200px;
+    height: 70px;
+    font-size: 25px;
+    background-color: #f7f7f7;
+    color: #1eaa31e3;
+    font-family: "News Cycle","Arial Narrow Bold",sans-serif;}
+
+.btn-primary{
+    color: #1eaa31e3;
+    background-color: white;
+    border-color: lightgray;
+}
+
+
+a:hover {
+    background-color: lightgray;
+    color: white; 
+}
+
+a{
+    font-size: 20px;
+    color: #1eaa31e3;
+    font-size: 200%;
+    font-family: "News Cycle","Arial Narrow Bold",sans-serif;
+    position: absolute;
+    left: 41.5%;
+    top: 109%;
+}
+
+
+/* Markup */
+body {
+    color: darkgray;
+    margin: 0;
+    font-family: "News Cycle","Arial Narrow Bold",sans-serif;
+}
+  
+  .content {
+    position: absolute;
+    left: 43%;
+    top: 96%;
+  }
+
+  /* Arrow */
+  polygon {
+    fill: #1eaa31e3;
+    transition: all .2s ease-out;
+  }

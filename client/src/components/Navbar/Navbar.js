@@ -1,6 +1,6 @@
 import React from "react";
 
-const Nav = (props) => (
+const Navbar = (props) => (
   <nav className="navbar navbar-default navbar-fixed-top">
     <div className="container-fluid">
       <div className="navbar-header">
@@ -19,5 +19,5 @@ const Nav = (props) => (
   </nav>
 );
 
-export default Nav;
+export default Navbar;
 // routes and it;s apis 

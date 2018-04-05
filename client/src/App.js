@@ -2,12 +2,11 @@ import React, { Component } from 'react';
 import './App.css';
 import {BrowserRouter as Router, Route, Redirect} from 'react-router-dom';
 import axios from 'axios';
-
 import SignIn from "./components/SignIn";
 import SignUp from "./components/SignUp";
-import Home from "./components/Home";
-import Investors from "./pages/Investors";
-import Nav from "./components/Navbar";
+import Home from "./pages/Home";
+import About from "./pages/About";
+
 
 class App extends Component {
   state = {
@@ -87,10 +86,10 @@ class App extends Component {
  
       <Router>
         <div>
-        <Nav handleLogout = {this.handleLogout} auth = { this.state.auth }/>
         <Route exact path = "/" render = {()=> {
           if(loggedIn){
             return <Redirect to = "/home" />
+         
           } else{
             return <SignIn 
               handleChange= {this.handleChange} 
@@ -112,11 +111,19 @@ class App extends Component {
             />
           }  
         }}/>
-        <Route exact path = "/home" render = {()=> {
+          <Route exact path = "/home" render = {()=> {
+            if(!loggedIn){
+              return <Redirect to = "/" />
+                }else {
+                  return <Home handleLogout = {this.handleLogout} auth = { this.state.auth }/>
+                } 
+            }
+        }/>
+        <Route exact path = "/about" render = {()=> {
           if(!loggedIn){
             return <Redirect to = "/" />
           } else {
-            return <Investors handleLogout = {this.handleLogout} auth = { this.state.auth }/>
+            return <About handleLogout = {this.handleLogout} auth = { this.state.auth }/>
           } 
         }
         }/>
