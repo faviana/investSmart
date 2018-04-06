@@ -1,7 +1,10 @@
-const router = require("express").Router();
-const investorRoutes = require("./investors");
+// module.exports = function (passport) {
+// 	const path = require("path");
+//     const router = require('express').Router();
+//     // const investorRoutes = require("./investors");
+    
+//     // Investor routes
+//     router.use("/investors", investorRoutes);
 
-// Investor routes
-router.use("/investors", investorRoutes);
-
-module.exports = router;
+// 	return router;
+// };
