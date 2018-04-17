@@ -47,7 +47,7 @@ const SignIn  = (props)=> {
 					<br />
 				</div>
 			</div>	
-			<Footer />	
+			{/* <Footer />	 */}
 		</div>
 		</div>
 
