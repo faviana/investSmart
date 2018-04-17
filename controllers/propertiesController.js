@@ -19,7 +19,7 @@ module.exports = {
     db.Properties
       .create(req.body)
       .then(function(dbModel){
-        return db.Investor.findByIdAndUpdate({}, { $push: { propertiesID: dbModel._id } }, { new: true});
+        return db.Investor.findOneAndUpdate({_id: req.investor._id}, { $push: { propertiesID: dbModel._id } }, { new: true});
       })
       .then(dbModel => res.json(dbModel))
       .catch(err => res.status(422).json(err));

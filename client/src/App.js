@@ -6,6 +6,7 @@ import SignIn from "./components/SignIn";
 import SignUp from "./components/SignUp";
 import Home from "./pages/Home";
 import About from "./pages/About";
+import Contact from "./pages/Contact";
 
 
 class App extends Component {
@@ -126,6 +127,14 @@ class App extends Component {
             return <About handleLogout = {this.handleLogout} auth = { this.state.auth }/>
           } 
         }
+        }/>
+        <Route exact path = "/contact" render = {()=> {
+            if(!loggedIn){
+              return <Redirect to = "/" />
+                }else {
+                  return <Contact handleLogout = {this.handleLogout} auth = { this.state.auth }/>
+                } 
+            }
         }/>
         </div>
       </Router>

@@ -4,7 +4,7 @@ import Footer from "../../components/Footer";
 
 
 
-const About = (props) => (
+const Contact = (props) => (
     <div>
         <Navbar handleLogout ={props.handleLogout} />
           
@@ -12,4 +12,4 @@ const About = (props) => (
     </div>
 );
 
-export default About;
+export default Contact;
