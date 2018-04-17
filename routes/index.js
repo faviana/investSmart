@@ -4,7 +4,8 @@ module.exports = function (passport) {
 
 
 	router.use("/auth",require("./authRoutes.js")(passport));
-	router.use("/api",require("./investors.js")(passport));
+	router.use("/api/investors",require("./investors.js")(passport));
+	router.use("/api/properties",require("./properties.js")(passport));
 	//add more routes here
 	
 

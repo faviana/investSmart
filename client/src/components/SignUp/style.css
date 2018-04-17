@@ -6,6 +6,7 @@
     background-color: #1eaa31e3;
     padding: 20px;
     padding-bottom: 50px;
+    box-shadow: 15px 15px 25px lightgrey;
 }
 
 h1.signup-title{
@@ -27,7 +28,7 @@ a:hover {
     color: white; 
 }
 
-a{
+signupLink{
     font-size: 20px;
     color: #1eaa31e3;
     font-size: 200%;
@@ -36,3 +37,5 @@ a{
     left: 41.5%;
     top: 109%;
 }
+
+

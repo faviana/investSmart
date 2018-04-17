@@ -1,0 +1,15 @@
+.titleRealEstate{
+    text-align: center;
+    font-family: "News Cycle","Arial Narrow Bold",sans-serif;
+    text-shadow: 7px 5px 5px #a9dbb0ad;
+    color: #21b935e3;
+}
+
+.outset {
+    box-shadow: 10px 5px 20px lightgrey;
+    border-style: outset darkgreen;
+    border-style: 100px 100px green;
+    padding: 20px;
+    width: 50;
+    border-color: #1eaa31e3;
+}

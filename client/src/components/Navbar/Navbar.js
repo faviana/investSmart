@@ -1,23 +1,45 @@
 import React from "react";
-
+import "./style.css";
+import { Link } from "react-router-dom";
 const Navbar = (props) => (
-  <nav className="navbar navbar-default navbar-fixed-top">
-    <div className="container-fluid">
-      <div className="navbar-header">
-        <a href="/" className="navbar-brand">
-          Smart Investing
-        </a>
-        <ul className="nav navbar-nav">
-        <li className="active navbar-left"><a href="/">Home <span className="sr-only">(current)</span></a></li>
-        <li className="navbar-left"><a href="/">About Us</a></li>
-        <li><a href="/">Contact Us</a></li>
-        <li className="navbar-right"><span onClick = {props.handleLogout}>Log Out</span></li>
-        
-        </ul>
-      </div>
+<div>
+<nav className="navbar navbar-default">
+  <div className="container">
+    <div className="navbar-header">
+      <button type="button" className="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+        <span className="sr-only">Toggle navigation</span>
+        <span className="icon-bar"></span>
+        <span className="icon-bar"></span>
+        <span className="icon-bar"></span>
+      </button>
     </div>
-  </nav>
+    <div className="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+
+      <ul className="nav navbar-nav navbar-right">
+        <li className="font-color"><Link to='/'onClick = {props.handleLogout}>Log Out</Link></li>
+      </ul>
+    
+      <ul className="nav navbar-nav navbar-right">
+        <li className="li-nav"><Link to="/contact">Contact</Link></li>
+      </ul>
+
+      <ul className="nav navbar-nav navbar-right">
+        <li className="li-nav"><Link to="/about">About</Link></li>
+      </ul>
+
+      <ul className="nav navbar-nav navbar-right">
+        <li className="logo"><Link to="/home">Smart Investment</Link></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+</div>
 );
 
 export default Navbar;
-// routes and it;s apis 
+
+
+
+
+
+

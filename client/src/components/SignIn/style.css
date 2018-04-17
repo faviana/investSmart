@@ -15,6 +15,7 @@ h1.logoName{
     background-color: #1eaa31e3;
     padding: 20px;
     padding-bottom: 50px;
+    box-shadow: 15px 15px 25px lightgrey;
 }
 
 h1.signin-title{
@@ -47,7 +48,7 @@ a:hover {
     color: white; 
 }
 
-a{
+.signupLink{
     font-size: 20px;
     color: #1eaa31e3;
     font-size: 200%;
@@ -65,7 +66,7 @@ body {
     font-family: "News Cycle","Arial Narrow Bold",sans-serif;
 }
   
-  .content {
+.content {
     position: absolute;
     left: 43%;
     top: 96%;

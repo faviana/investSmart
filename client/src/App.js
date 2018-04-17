@@ -111,7 +111,7 @@ class App extends Component {
             />
           }  
         }}/>
-          <Route exact path = "/home" render = {()=> {
+          <Route path = "/home" render = {()=> {
             if(!loggedIn){
               return <Redirect to = "/" />
                 }else {

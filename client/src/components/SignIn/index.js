@@ -1,16 +1,19 @@
 import React from 'react';
 import "./style.css";
 import {Link} from 'react-router-dom';
-import Footer from "../Footer";
-
+import Footer from "../../components/Footer";
+import Navbar from "../../components/Navbar";
 
 const SignIn  = (props)=> {
 	return (
+		<div>
+			<Navbar />
 		<div className='container'>
 			<div className='row'>
 				<div className = 'col-sm-3'>
 				</div>
 				<div className = 'center signin-div col-sm-6'>
+				<br />
 					<form name = "/auth/signin" onSubmit = {props.handleSubmit} className='signin-form'>
 						<h1 className='logoName'>Smart Investment</h1>
 							<hr />
@@ -23,14 +26,14 @@ const SignIn  = (props)=> {
 						<div className='input-group-prepend'>
 							<input className=" center form-control" autoComplete="new-password" name='password' type='password' value = {props.password} onChange = {props.handleChange} placeholder="PASSWORD"/>
 						</div>
-							<br/>
-							<br/>
-								<input type="submit" style={{display:"none"}}/>
-								<button  className = 'signin-btn' name = "/auth/signin" onClick = {props.handleSubmit} type = 'submit' >Log In</button>
-									<br />
+						<br/>
+						<br/>
+							<input type="submit" style={{display:"none"}}/>
+							<button  className = 'signin-btn' name = "/auth/signin" onClick = {props.handleSubmit} type = 'submit' >Log In</button>
+							<br />
 					</form>
-						<br />
-					<p>If your are ready to enter a world of organization and profit Sign Up below</p>
+					<br />
+					<p className="textLogin">If your are ready to enter a world of profit Sign Up below</p>
 					<div className="container">
   						<div className="content">
     						<svg id="more-arrows">
@@ -40,15 +43,15 @@ const SignIn  = (props)=> {
     						</svg>
   						</div>
 					</div>			
-					<Link to = "/signup" >Sign Up</Link>
-						<br />
+					<Link className="signupLink" to = "/signup" >Sign Up</Link>
+					<br />
 				</div>
-			</div>
-						
-
-			<Footer />
+			</div>	
+			<Footer />	
 		</div>
-		
+		</div>
+
 	);
+	
 }
 export default SignIn;

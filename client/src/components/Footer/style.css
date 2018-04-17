@@ -1,0 +1,17 @@
+html{
+  position: relative;
+  min-height: 100%;
+}
+body {
+  margin: 0 0 210px; /* bottom = footer height */
+}
+  
+.footer span {
+  position: absolute;
+  left: 0;
+  bottom: 20px;
+  width: 100%;
+  text-align: center;
+  background-color: white;
+  color: lightgray;
+}
