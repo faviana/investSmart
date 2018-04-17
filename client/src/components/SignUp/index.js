@@ -8,7 +8,7 @@ const SignUp = (props)=> {
 	return (
 		<div>
 
-		<Navbar />
+		{/* <Navbar /> */}
 		<div className='container'>
 			<div className='row'>
 				<div className = 'col-sm-3'>

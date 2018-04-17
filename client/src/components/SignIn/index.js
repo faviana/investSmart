@@ -7,7 +7,7 @@ import Navbar from "../../components/Navbar";
 const SignIn  = (props)=> {
 	return (
 		<div>
-			<Navbar />
+			{/* <Navbar /> */}
 		<div className='container'>
 			<div className='row'>
 				<div className = 'col-sm-3'>
@@ -47,7 +47,7 @@ const SignIn  = (props)=> {
 					<br />
 				</div>
 			</div>	
-			{/* <Footer />	 */}
+			<Footer />	
 		</div>
 		</div>
 
